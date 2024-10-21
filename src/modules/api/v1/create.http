@@ -1,0 +1,9 @@
+# create
+POST http://localhost:9120/api/v1/create
+token: PRIVATE_TOKEN
+Content-Type: application/json
+
+{
+  "username": "pagoru",
+  "did": "kzqafikm3yahdv3u56f4x3be"
+}

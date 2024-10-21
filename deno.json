@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "start": "deno run -A --watch=./src --unstable-kv mod.ts",
+    "start:nowatch": "deno run -A --unstable-kv mod.ts",
+
+    "compile": "deno compile -A --unstable-kv --no-check",
+
+    "compile:windows": "deno task compile --target=x86_64-pc-windows-msvc --output ./build/auth_windows ./mod.ts",
+    "compile:linux": "deno task compile --target=x86_64-unknown-linux-gnu --output ./build/auth_linux ./mod.ts",
+    "compile:linux_aarch64": "deno task compile --target=aarch64-unknown-linux-gnu --output ./build/auth_linux_aarch64 ./mod.ts",
+    "compile:darwin": "deno task compile --target=x86_64-apple-darwin --output ./build/auth_darwin ./mod.ts",
+    "compile:current": "deno task compile --output ./server ./mod.ts",
+
+    "build": "(deno task compile:linux) & (deno task compile:linux_aarch64) & (deno task compile:darwin) & (deno task compile:windows)"
+  },
+  "imports": {
+    "@oh/utils": "jsr:@oh/utils@1.2.4",
+
+    "modules/": "./src/modules/",
+    "shared/": "./src/shared/",
+
+    "loadenv": "https://deno.land/x/loadenv@v1.0.1/mod.ts",
+
+    "ovh": "npm:ovh@2.0.3"
+  },
+  "nodeModulesDir": "auto"
+}

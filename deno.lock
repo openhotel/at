@@ -1,0 +1,85 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@oh/utils@1.2.4": "1.2.4",
+    "jsr:@oh/yaml@1.1.0": "1.1.0",
+    "jsr:@std/fs@1.0.4": "1.0.4",
+    "jsr:@std/path@1.0.6": "1.0.6",
+    "jsr:@std/path@^1.0.6": "1.0.6",
+    "jsr:@std/yaml@1.0.5": "1.0.5",
+    "npm:dayjs@1.11.13": "1.11.13",
+    "npm:ovh@2.0.3": "2.0.3",
+    "npm:prettier@3.3.3": "3.3.3"
+  },
+  "jsr": {
+    "@oh/utils@1.2.4": {
+      "integrity": "3136bda5d47148693ea6436b0e52ef1bf4c31bdf3a3f099cefa077086bc53812",
+      "dependencies": [
+        "jsr:@oh/yaml",
+        "jsr:@std/fs",
+        "jsr:@std/path@1.0.6",
+        "jsr:@std/yaml",
+        "npm:dayjs"
+      ]
+    },
+    "@oh/yaml@1.1.0": {
+      "integrity": "57f2f01bf259dff8896fb9d8f4f49e477e6533ccc5cbc4559ebd8410142aeff5",
+      "dependencies": [
+        "jsr:@std/fs",
+        "jsr:@std/path@1.0.6",
+        "jsr:@std/yaml"
+      ]
+    },
+    "@std/fs@1.0.4": {
+      "integrity": "2907d32d8d1d9e540588fd5fe0ec21ee638134bd51df327ad4e443aaef07123c",
+      "dependencies": [
+        "jsr:@std/path@^1.0.6"
+      ]
+    },
+    "@std/path@1.0.6": {
+      "integrity": "ab2c55f902b380cf28e0eec501b4906e4c1960d13f00e11cfbcd21de15f18fed"
+    },
+    "@std/yaml@1.0.5": {
+      "integrity": "71ba3d334305ee2149391931508b2c293a8490f94a337eef3a09cade1a2a2742"
+    }
+  },
+  "npm": {
+    "async@0.9.2": {
+      "integrity": "sha512-l6ToIJIotphWahxxHyzK9bnLR6kM4jJIIgLShZeqLY7iboHoGkdgFl7W2/Ivi4SkMJYGKqW8vSuk0uKUj6qsSw=="
+    },
+    "bluebird@3.7.2": {
+      "integrity": "sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg=="
+    },
+    "dayjs@1.11.13": {
+      "integrity": "sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg=="
+    },
+    "ovh@2.0.3": {
+      "integrity": "sha512-K2XpfSYza7PHVDqAP6BNk92X3f+BvaNd6eSgMqguLTaUz/DYzOyHsbGFu7lyHTkIUUb9qamvJ9FC6OTzk7tj3Q==",
+      "dependencies": [
+        "async",
+        "bluebird"
+      ]
+    },
+    "prettier@3.3.3": {
+      "integrity": "sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew=="
+    }
+  },
+  "remote": {
+    "https://deno.land/std@0.211.0/dotenv/mod.ts": "bcfa9c102d5ce6218ec0c4a69aa0fc1009fc309a85448f98a8debaa75866a3d7",
+    "https://deno.land/std@0.211.0/dotenv/parse.ts": "ddcb04a8a7198918cfc52efbebb0d4fc51abfea913649912fcc1cf4c52bd81a2",
+    "https://deno.land/std@0.211.0/dotenv/stringify.ts": "74521a8e907adffff19f132765902a8c51743e386107b91cc934bae154031e84",
+    "https://deno.land/x/loadenv@v1.0.1/mod.ts": "287c1cc1b4bf024a1381610428d783854853aa36cca6f927e5f6dba81f350616",
+    "https://deno.land/x/loadenv@v1.0.1/src/main.ts": "216f20535f9e41be15679b0a48bba5eeb8dcf12b3ad1a1ab1971c5b0ae698e0a"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@oh/utils@1.2.4",
+      "npm:ovh@2.0.3"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:prettier@3.3.3"
+      ]
+    }
+  }
+}
