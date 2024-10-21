@@ -1,13 +1,13 @@
 import { requestV1List } from "modules/api/v1/main.ts";
 import { appendCORSHeaders, getCORSHeaders, RequestMethod } from "@oh/utils";
-import {System} from "modules/system/main.ts";
+import { System } from "modules/system/main.ts";
 
 export const api = () => {
   const load = () => {
     for (const request of requestV1List)
       console.info(request.method, request.pathname);
-    
-    Deno.serve({ port: System.getConfig().port }, onRequest)
+
+    Deno.serve({ port: System.getConfig().port }, onRequest);
   };
 
   const onRequest = async (
