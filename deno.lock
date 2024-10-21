@@ -1,7 +1,7 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@oh/utils@1.2.4": "1.2.4",
+    "jsr:@oh/utils@1.3.0": "1.3.0",
     "jsr:@oh/yaml@1.1.0": "1.1.0",
     "jsr:@std/fs@1.0.4": "1.0.4",
     "jsr:@std/path@1.0.6": "1.0.6",
@@ -12,8 +12,8 @@
     "npm:prettier@3.3.3": "3.3.3"
   },
   "jsr": {
-    "@oh/utils@1.2.4": {
-      "integrity": "3136bda5d47148693ea6436b0e52ef1bf4c31bdf3a3f099cefa077086bc53812",
+    "@oh/utils@1.3.0": {
+      "integrity": "5547e8e611707dc1d6f02a749490676d65288b508b82104bc7c00cfb78281cae",
       "dependencies": [
         "jsr:@oh/yaml",
         "jsr:@std/fs",
@@ -73,7 +73,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@oh/utils@1.2.4",
+      "jsr:@oh/utils@1.3.0",
       "npm:ovh@2.0.3"
     ],
     "packageJson": {
