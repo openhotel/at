@@ -45,7 +45,7 @@ jobs:
       - name: "Zip build"
         run: |
           cd ./build/
-          zip -r ../auth_${{ matrix.os }}.zip .
+          zip -r ../at_${{ matrix.os }}.zip .
 
       - name: "Upload to release"
         uses: svenstaro/upload-release-action@v2
