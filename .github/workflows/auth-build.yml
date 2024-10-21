@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  auth-build:
+  at-build:
     name: "Build At"
 
     runs-on: ubuntu-latest

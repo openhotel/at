@@ -8,7 +8,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  auth-at:
+  at-build:
     name: "Build At"
 
     runs-on: ubuntu-latest
