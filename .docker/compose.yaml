@@ -9,4 +9,4 @@ services:
       - "openhotel-at:/app"
     image: "openhotel/at:latest"
 volumes:
-  openhotel-auth: null
+  openhotel-at: null
