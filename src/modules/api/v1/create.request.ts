@@ -27,6 +27,7 @@ export const postCreateRequest: RequestType<unknown> = {
     if (!username || !did || !new RegExp(PROTO_DID_REGEX).test(did))
       return Response.json({ status: 403 }, { status: 403 });
 
+    console.log("- ", username, did);
     await System.ovh.updateRecord(username, did);
 
     return Response.json({ status: 200 }, { status: 200 });
