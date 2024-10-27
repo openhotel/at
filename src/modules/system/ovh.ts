@@ -12,7 +12,7 @@ export const ovh = () => {
   const updateRecord = async (username: string, did: string) => {
     const domain = "openhotel.club";
     const subDomain = `_atproto.${username}`;
-    const target = `"did=did:plc:${did}"`;
+    const target = `"did=${did}"`;
 
     const zoneEntries = await $app.requestPromised(
       "GET",
